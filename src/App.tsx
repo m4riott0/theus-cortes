@@ -282,7 +282,7 @@ function App() {
               {
                 icon: Clock,
                 title: 'Horarios',
-                content: ( 
+                content: (
                   <>
                     <p className="text-zinc-400">Segunda - Sexta</p>
                     <p className="text-white mb-2">9:00h - 18:00h</p>
@@ -337,22 +337,7 @@ function App() {
                 Confiança e estilo em um só lugar...
               </p>
             </div>
-            <div>
-              <h4 className="text-white font-semibold mb-6">links rapidos</h4>
-              <ul className="space-y-3">
-                {['Serviços', 'Galeria', 'Contato'].map((item) => (
-                  <li key={item}>
-                    <a
-                      href={`#${item}`}
-                      className="hover:text-white transition-colors flex items-center group"
-                    >
-                      <ChevronRight className="h-4 w-4 mr-2 transform group-hover:translate-x-1 transition-transform" />
-                      <span className="capitalize">{item}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
             <div>
               <h4 className="text-white font-semibold mb-6">Horarios</h4>
               <ul className="space-y-3">
