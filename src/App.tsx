@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { Scissors, Clock, MapPin, Phone, Instagram, Menu, X, Calendar, Award, Users, Sparkles, ChevronRight } from 'lucide-react';
 
 const services = [
-  { name: 'Corte Social', price: 'R$25', duration: '30 min', description: 'Clássico e elegante, perfeito para qualquer ocasião.' },
-  { name: 'Degrade', price: 'R$33', duration: '30 min', description: 'Transição suave, estilo impecável.' },
-  { name: 'Degrade Navalhado', price: 'R$35', duration: '40 min', description: 'Marcante e preciso, um visual afiado.' },
-  { name: 'Platinado', price: 'R$100', duration: '60 min', description: 'Fios de luz para um visual ousado.' },
-  { name: 'Pigmentação', price: 'R$25', duration: '60 min', description: 'Cor vibrante, renovação total.' },
-  { name: 'Barba', price: 'R$20', duration: '20 min', description: 'Definição e estilo para sua barba.' },
-  { name: 'Luzes', price: 'R$100', duration: '60 min', description: 'Reflexos sutis, brilho natural.' },
-  { name: 'Penteado', price: 'R$30', duration: '35 min', description: 'Fios moldados com perfeição.' },
+  { name: 'Corte Social', price: 'R$25', duration: '', description: 'Clássico e elegante, perfeito para qualquer ocasião.' },
+  { name: 'Degrade', price: 'R$33', duration: '', description: 'Transição suave, estilo impecável.' },
+  { name: 'Degrade Navalhado', price: 'R$35', duration: '', description: 'Marcante e preciso, um visual afiado.' },
+  { name: 'Platinado', price: 'R$100', duration: '', description: 'Fios de luz para um visual ousado.' },
+  { name: 'Pigmentação', price: 'R$25', duration: '', description: 'Cor vibrante, renovação total.' },
+  { name: 'Barba', price: 'R$20', duration: '', description: 'Definição e estilo para sua barba.' },
+  { name: 'Luzes', price: 'R$100', duration: '', description: 'Reflexos sutis, brilho natural.' },
+  { name: 'Penteado', price: 'R$30', duration: '', description: 'Fios moldados com perfeição.' },
 ];
 
 
@@ -208,10 +208,6 @@ function App() {
                 <p className="text-zinc-600 mb-4 group-hover:text-zinc-700 transition-colors">
                   {service.description}
                 </p>
-                <div className="flex items-center text-zinc-500 group-hover:text-zinc-600 transition-colors">
-                  <Clock className="h-4 w-4 mr-2" />
-                  <span>{service.duration}</span>
-                </div>
                 <div className={`absolute inset-0 bg-black/5 rounded-lg transition-opacity duration-300 ${activeService === service.name ? 'opacity-100' : 'opacity-0'
                   }`} />
               </div>
