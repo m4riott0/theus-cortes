@@ -6,7 +6,7 @@ const services = [
   { name: 'Degrade', price: 'R$33', duration: '30 min', description: 'Transição suave, estilo impecável.' },
   { name: 'Degrade Navalhado', price: 'R$35', duration: '40 min', description: 'Marcante e preciso, um visual afiado.' },
   { name: 'Platinado', price: 'R$100', duration: '60 min', description: 'Fios de luz para um visual ousado.' },
-  { name: 'Pigmentação', price: 'R$100', duration: '60 min', description: 'Cor vibrante, renovação total.' },
+  { name: 'Pigmentação', price: 'R$25', duration: '60 min', description: 'Cor vibrante, renovação total.' },
   { name: 'Barba', price: 'R$20', duration: '20 min', description: 'Definição e estilo para sua barba.' },
   { name: 'Luzes', price: 'R$100', duration: '60 min', description: 'Reflexos sutis, brilho natural.' },
   { name: 'Penteado', price: 'R$30', duration: '35 min', description: 'Fios moldados com perfeição.' },
@@ -24,7 +24,7 @@ const gallery = [
   },
   {
     url: '/assets/image/dimil.png',
-    title: 'Cortee Dimil'
+    title: 'Corte Dimil'
   },
   {
     url: '/assets/image/luzes.png',
@@ -282,7 +282,7 @@ function App() {
               {
                 icon: Clock,
                 title: 'Horarios',
-                content: (
+                content: ( 
                   <>
                     <p className="text-zinc-400">Segunda - Sexta</p>
                     <p className="text-white mb-2">9:00h - 18:00h</p>
