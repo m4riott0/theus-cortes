@@ -114,24 +114,30 @@ function App() {
             alt="Barber Shop Interior"
             className="w-full h-full object-cover transform scale-105 origin-center"
             style={{
-              transform: isScrolled ? 'scale(1.1)' : 'scale(1)',
-              transition: 'transform 0.6s ease-out'
+              transform: isScrolled ? "scale(1.1)" : "scale(1)",
+              transition: "transform 0.6s ease-out",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-6 py-32">
+        <div className="relative max-w-7xl mx-auto px-6 py-32 text-center md:text-left">
           <div className="max-w-3xl">
-            <h1 className={`text-7xl font-bold text-white mb-6 leading-tight ${isLoaded ? 'animate-fade-in' : 'opacity-0'
-              }`}>
+            <h1
+              className={`text-4xl md:text-7xl font-bold text-white mb-6 leading-tight ${isLoaded ? "animate-fade-in" : "opacity-0"
+                }`}
+            >
               Construindo confiança através do cuidado especializado
             </h1>
-            <p className={`text-xl text-zinc-300 mb-8 leading-relaxed ${isLoaded ? 'animate-fade-in-delay-1' : 'opacity-0'
-              }`}>
+            <p
+              className={`text-base md:text-lg text-zinc-300 mb-8 leading-relaxed ${isLoaded ? "animate-fade-in-delay-1" : "opacity-0"
+                }`}
+            >
               Experimente a arte da barbearia tradicional. Onde estilo encontra precisão, e cada corte conta a sua história.
             </p>
-            <div className={`flex flex-wrap gap-4 ${isLoaded ? 'animate-fade-in-delay-2' : 'opacity-0'
-              }`}>
+            <div
+              className={`flex flex-col md:flex-row items-center md:items-start gap-4 ${isLoaded ? "animate-fade-in-delay-2" : "opacity-0"
+                }`}
+            >
               <a
                 href="https://w.app/barbearia-theus-cortes"
                 className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-zinc-200 transition transform hover:scale-105 hover:shadow-lg"
@@ -148,12 +154,13 @@ function App() {
                 href="#gallery"
                 className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
               >
-                meu trabalho
+                Meu trabalho
               </a>
             </div>
           </div>
         </div>
       </div>
+
 
       {/* Enhanced Stats Section with animations */}
       <section className="py-20 bg-black text-white relative overflow-hidden">
