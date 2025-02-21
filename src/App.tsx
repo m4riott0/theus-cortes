@@ -76,7 +76,7 @@ function App() {
             </div>
             <div className="hidden md:flex gap-8">
               <a
-                href="https://w.app/barbearia-theus-cortes"
+                href="https://wa.me/5517996593877"
                 className="bg-white text-black px-6 py-2 rounded-full hover:bg-zinc-200 transition transform hover:scale-105"
               >
                 Reserve-se
@@ -95,7 +95,7 @@ function App() {
         <div className={`md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-sm transform transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
           <div className="px-6 py-4 space-y-4">
             <a
-              href="https://w.app/barbearia-theus-cortes"
+              href="https://wa.me/5517996593877"
               className="block bg-white text-black px-6 py-3 rounded-full text-center hover:bg-zinc-200 transition transform hover:scale-105"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -139,7 +139,7 @@ function App() {
                 }`}
             >
               <a
-                href="https://w.app/barbearia-theus-cortes"
+                href="https://wa.me/5517996593877"
                 className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-zinc-200 transition transform hover:scale-105 hover:shadow-lg"
               >
                 Reserve-se
@@ -299,7 +299,7 @@ function App() {
                 title: 'Contato',
                 content: (
                   <>
-                    <a href="https://w.app/barbearia-theus-cortes" className="text-white hover:text-zinc-300 transition ">
+                    <a href="https://wa.me/5517996593877" className="text-white hover:text-zinc-300 transition ">
                       (17)99659-3877
                     </a>
                     <div className="flex gap-6 justify-center mt-6">
@@ -364,7 +364,7 @@ function App() {
                 </li>
                 <li className="flex items-center">
                   <Phone className="h-5 w-5 mr-2" />
-                  <a href="https://w.app/barbearia-theus-cortes" className="hover:text-white transition-colors">
+                  <a href="https://wa.me/5517996593877" className="hover:text-white transition-colors">
                     (17)99659-3877
                   </a>
                 </li>
