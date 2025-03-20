@@ -5,10 +5,10 @@ const services = [
   { name: 'Corte Social', price: 'R$25', duration: '', description: 'Clássico e elegante, perfeito para qualquer ocasião.' },
   { name: 'Degrade', price: 'R$33', duration: '', description: 'Transição suave, estilo impecável.' },
   { name: 'Degrade Navalhado', price: 'R$35', duration: '', description: 'Marcante e preciso, um visual afiado.' },
-  { name: 'Platinado', price: 'R$100', duration: '', description: 'Fios de luz para um visual ousado.' },
+  { name: 'Platinado/Luzes', price: 'R$100', duration: '', description: 'Realce seu estilo com mechas platinadas que adicionam luminosidade e sofisticação ao seu visual.' },
   { name: 'Pigmentação', price: 'R$25', duration: '', description: 'Cor vibrante, renovação total.' },
   { name: 'Barba', price: 'R$20', duration: '', description: 'Definição e estilo para sua barba.' },
-  { name: 'Luzes', price: 'R$100', duration: '', description: 'Reflexos sutis, brilho natural.' },
+  { name: 'Combo Barba + Corte', price: 'R$60', duration: '', description: 'Renove seu visual com um corte impecável e um acabamento de barba alinhado e bem definido.' },
   { name: 'Penteado', price: 'R$30', duration: '', description: 'Fios moldados com perfeição.' },
 ];
 
@@ -37,6 +37,14 @@ const gallery = [
   {
     url: '/assets/image/platinado.png',
     title: 'Platinado'
+  },
+  {
+    url: '/assets/image/navalhado-alto.png',
+    title: 'Navalhado alto'
+  },
+  {
+    url: '/assets/image/combo.png',
+    title: 'Combo Barba + Corte'
   },
 ];
 
@@ -197,8 +205,11 @@ function App() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
-              <div
+              <a
                 key={service.name}
+                href="https://wa.me/5517996593877"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="service-card relative bg-zinc-50 p-8 rounded-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
                 onMouseEnter={() => setActiveService(service.name)}
                 onMouseLeave={() => setActiveService(null)}
@@ -215,9 +226,8 @@ function App() {
                 <p className="text-zinc-600 mb-4 group-hover:text-zinc-700 transition-colors">
                   {service.description}
                 </p>
-                <div className={`absolute inset-0 bg-black/5 rounded-lg transition-opacity duration-300 ${activeService === service.name ? 'opacity-100' : 'opacity-0'
-                  }`} />
-              </div>
+                <div className={`absolute inset-0 bg-black/5 rounded-lg transition-opacity duration-300 ${activeService === service.name ? 'opacity-100' : 'opacity-0'}`} />
+              </a>
             ))}
           </div>
         </div>
